@@ -1,21 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
+    <div id="container">
+
+        <div id="main">
+
+            <div class="header-wrapper">
+                <h4>DÖVİZ KURU ÇEVİRİCİ</h4>
+            </div>
+
+
+            <div class="content-wrapper">
+
+                <input id="amount" type="number" placeholder="Miktar" />
+
+                <select id="firstCurrencyOption">
+                    <option>USD</option>
+                    <option>EUR</option>
+                    <option>TRY</option>
+                    <option>RUB</option>
+                </select>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <select id="lastCurrencyOption">
+                    <option>USD</option>
+                    <option>EUR</option>
+                    <option selected>TRY</option>
+                    <option>RUB</option>
+                </select>
+                <input type="number" id="result" readonly placeholder="Sonuç">
+                <span>Copyright - EREN TAN</span>
+            </div>
+
+        </div>
+    </div>
 
 
 
 
 
-
-    
+    <script src="currency.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>
